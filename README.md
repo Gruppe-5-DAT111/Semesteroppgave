@@ -10,7 +10,7 @@ Oppgave innlevering 1
 
 | name                                                                        | purpose / description                                           |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [scr](/src/)                                                                | her kode og scripts blir plassert                               |
+| [scr](/src/)                                                                | her blir kode og scripts blir plassert                          |
 | [etc](/etc/)                                                                | her blir mediefiler vi ikke har andre steder å sortere          |
 
 ## Bakgrunn og problembeskrivelse
