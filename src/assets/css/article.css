@@ -20,6 +20,11 @@ article section {
     flex-direction:column;
 }
 
+article>header {
+    display: flex;
+    flex-direction: column;
+}
+
 article p {
     padding: 10px;
 }
