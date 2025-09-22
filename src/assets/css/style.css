@@ -79,11 +79,14 @@ html {
   flex: 1;
 }
 
-.contact h1 {
+main > h1 {
   font-size: 3.5rem;
   font-family: Satoshi-Variable;
 }
-
+main p {
+  font-size: 1.25rem;
+  width: min(100%, 45rem);
+}
 .contact-locations {
   display: flex;
   flex-wrap: wrap;
@@ -102,4 +105,36 @@ html {
 }
 .main-section > section + section {
   margin-top: 3.75rem;
+}
+
+.main-header {
+  margin-top: 2rem;
+}
+
+.nav-items {
+  flex-basis: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: .3125rem;
+  margin-left: -0.5rem;
+}
+
+.nav-items:last-child {
+  justify-content: end;
+  margin-right: -0.5rem;
+}
+.nav-item a {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: black;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
