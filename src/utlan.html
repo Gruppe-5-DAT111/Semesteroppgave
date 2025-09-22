@@ -21,6 +21,41 @@
             .flex-item {
                 flex: 1;
             }
+
+            input[type=text] {
+                width: 100%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('./assets/img/searchicon.png');
+                background-position: 10px 10px; 
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+            }
+
+            #searchTable {
+                border-collapse: collapse;
+                width: 100%;
+                border: 1px solid #ddd;
+                font-size: 18px;
+            }
+
+            #searchTable th, #searchTable td {
+                text-align: left;
+                padding: 12px;
+            }
+
+            #searchTable tr {
+                border-bottom: 1px solid #ddd;
+            }
+
+            #searchTable tr.header, #searchTable tr:hover {
+                background-color: #f1f1f1;
+            }
         </style>
     </head>
 <body>
@@ -43,8 +78,53 @@
     </div>
 </header>
 
+<!--https://www.w3schools.com/howto/howto_css_animated_search.asp-->
+<!--https://www.w3schools.com/howto/howto_js_filter_table.asp-->
+
 <main class="container-2xl">
-        <h1>Utlån</h1>
-    </main>
+    <article>
+        <header>
+            <h1>Utlån</h1>
+            <p>lån ting her</p>
+        </header>
+        <section>
+            <form action="">
+                <input type="text" name="search" id="itemSearch" placeholder="Search.." title="Search for an item" onkeyup="filterItems()">
+            </form>
+            <table id="searchTable">
+                <tr class="header">
+                  <th style="width:30%;">Name</th>
+                  <th style="width:40%;">description</th>
+                  <th style="width:30%;">image</th>
+                </tr>
+                <tr>
+                  <td>item name</td>
+                  <td>item description</td>
+                  <td></td>
+                </tr>
+              </table>
+        </section>
+    </article>
+</main>
+<script>
+    function filterItems() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("itemSearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("searchTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }       
+        }
+    }
+</script>
 </body>
 </html>
