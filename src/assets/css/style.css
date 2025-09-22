@@ -87,12 +87,28 @@ main p {
   font-size: 1.25rem;
   width: min(100%, 45rem);
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex: 1;
+}
+
 .contact-locations {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.875rem;
-  flex-grow: 1;
-  flex-basis: 1;
+  gap: 2.5rem;
+}
+
+.contact-locations p {
+  font-size: 1.125rem;
+}
+
+.locations {
+  flex: 2 !important;
 }
 
 .section-title {
