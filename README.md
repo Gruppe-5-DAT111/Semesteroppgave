@@ -2,7 +2,7 @@
 
 Dette prosjektet er en del av undervisningen ved Høgskulen på Vestlandet (HVL) og utføres av en gruppe studenter. Oppdraget går ut på å utvikle nye nettsider for Læringslabbene, med mål om å designe og kode et brukervennlig nettsted som effektivt kommuniserer informasjon om læringslabbenes tilbud og tjenester.
 
-## Gruppe medlemmer
+## Gruppemedlemmer
 * [@larsbirger](https://github.com/larsbirger)
 * [@hovringmarkus-crypto](https://github.com/hovringmarkus-crypto)
 * [@Paszkiewicz](https://github.com/paszkiewicz)
