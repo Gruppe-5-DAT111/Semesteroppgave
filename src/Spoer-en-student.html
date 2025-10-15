@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="no">
     <head>
-        <title>Utlån | HVL - Læringslab</title>
-
-        <!-- Stylesheet 
-        ======================================= -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-    
-        <!-- Meta
+	<title>Spør en student</title>
+ 	<!-- Meta
         ======================================= -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- Stylesheet 
+        ======================================= -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
         <style>
             .flex-row {
                 display: flex;
@@ -21,108 +20,74 @@
             .flex-item {
                 flex: 1;
             }
-
-            input[type=text] {
-                width: 100%;
-                box-sizing: border-box;
-                border: 2px solid #ccc;
-                border-radius: 4px;
-                font-size: 16px;
-                background-color: white;
-                background-image: url('./assets/img/searchicon.png');
-                background-position: 10px 10px; 
-                background-repeat: no-repeat;
-                padding: 12px 20px 12px 40px;
-                -webkit-transition: width 0.4s ease-in-out;
-                transition: width 0.4s ease-in-out;
-            }
-
-            #searchTable {
-                border-collapse: collapse;
-                width: 100%;
-                border: 1px solid #ddd;
-                font-size: 18px;
-            }
-
-            #searchTable th, #searchTable td {
-                text-align: left;
-                padding: 12px;
-            }
-
-            #searchTable tr {
-                border-bottom: 1px solid #ddd;
-            }
-
-            #searchTable tr.header, #searchTable tr:hover {
-                background-color: #f1f1f1;
-            }
         </style>
     </head>
+
 <body>
-     
-<header>
-    <div class="main-header container-2xl">
-    <nav class="main-nav">
-        <ul class="nav-items">
-            <li class="nav-item"><a href="./index.html">Hjem</a></li>
-            <li class="nav-item"><a href="./om-oss.html">Om Oss</a></li>
-            <li class="nav-item"><a href="./kontakt.html">Kontakt</a></li>
-        </ul>
-        <img src="./assets/img/website-logo-no.svg" alt="">
-        <ul class="nav-items">
-            <li class="nav-item"><a href="">Hvordan kan jeg?</a></li>
-            <li class="nav-item"><a href="./utlan.html">Utlån</a></li>
-        </ul>
-    </nav>
+    <header>
+	<a id="Page-Top"></a>
+        <div class="main-header container-2xl">
+        <nav class="main-nav">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="./index.html">Hjem</a></li>
+                <li class="nav-item"><a href="./om-oss.html">Om Oss</a></li>
+                <li class="nav-item"><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+            <img src="./assets/img/website-logo-no.svg" alt="">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="">Hvordan kan jeg?</a></li>
+                <li class="nav-item"><a href="./utlan.html">Utlån</a></li>
+		<li class="nav-item"><a href="./baerekraft.html">Bærekraft</a></li>
+		<li class="nav-item"><a href="./spoer-en-student.html"></a></li>
+            </ul>
+        </nav>
 
-    </div>
-</header>
+        </div>
+    </header>
 
-<!--https://www.w3schools.com/howto/howto_css_animated_search.asp-->
-<!--https://www.w3schools.com/howto/howto_js_filter_table.asp-->
+    <main class="container-2xl main-content">
+    <section>
+	<h1>Spør en student!</h1>
+	    <p>Hva er egentlig en læringslab og hva tenker studentene om læringslabben? Vi har spurt noen studenter om hva de synes!</p>
+		 <div class="flex-row">
+                     <div class="flex-item">
+			<h3>Student nr 1</h3>
+			    <p>Hva syns du om læringslab og har du brukt den til noe spesielt?</p>
+			    <ul>
+				<li>Synes lærinslabben e nice. 
+Brukte den før for å arrangere eventer som mario cart tournaments.
 
-<main class="container-2xl main-content">
-    <article>
-        <header>
-            <h1>Utlån</h1>
-            <p>lån ting her</p>
-        </header>
-            
-        <input type="text" name="search" id="itemSearch" placeholder="Search.." title="Search for an item" onkeyup="filterItems()">
-        <table id="searchTable">
-            <tr class="header">
-                <th style="width:30%;">Name</th>
-                <th style="width:40%;">description</th>
-                <th style="width:30%;">image</th>
-            </tr>
-            <tr>
-                <td>item name</td>
-                <td>item description</td>
-                <td></td>
-            </tr>
-            </table>
-    </article>
-</main>
-<script>
-    function filterItems() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("itemSearch");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("searchTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-        }       
-        }
-    }
-</script>
+Brukte den til å lære meg litt photoshop, og en del om podcast utstyr. 
+
+Brukte den til å lage dilldall med 3d printeren
+
+Brukte den til å henge med venner
+
+Eg og andre brukte den til å skrive ut deler til bacheloroppgavene
+
+Andre eg kjenner kom innom så me kunne lære de om 3d printing, og media utstyr
+
+Andre kom innom for å spør om tips til å 3d modelere stuff og teknisk tegning og sånt
+Eg skrev store deler av bacheloroppgaven min der sist</li>
+			    </ul>
+			</div>
+			<div class="flex-item">
+			    <h3>Student nr 2</h3>
+				<p>Hva syns du om læringslab og har du brukt den til noe spesielt?</p>
+				<ul>
+				    <li>Like læringslabben. Har ikkje brukt den så veldig mye, men sitte her av og til for å jobbe med skolearbeidet sammen med venner. Prøvde 3d printeren en gang og det var kult</li>
+				</ul>
+			</div>
+			<div class="flex-item">
+			    <h3>Student nr 3</h3>
+				<p>Hva syns du om læringslab og har du brukt den til noe spesielt?</p>
+				<ul>
+				    <li>Labben er veldig kjekk. Har brukt den til å prøve meg på droneflyging, noe som var veldig gøy. Hørte om droner på nyhetene og ville prøve selv. Har også prøvd litt 3d-printing, men droneflyging var det kjekkeste. Har også hengt der litt med noen kompiser</li>
+				</ul>
+			</div>
+		    </div>
+		</section>
+	</main>
 <footer class="main-footer">
         <div class="container-2xl footer-content">
             <div>
