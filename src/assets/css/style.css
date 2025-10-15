@@ -1,4 +1,11 @@
-@charset "UTF-8";
+:root {
+    --color-primary: #004357;
+    --color-secondary: #00afba;
+    --color-accent: #4CAF50;
+    --color-primary-dark: hsl(194, 100%, 10%);
+    --font-size: 18px;
+}
+
 @font-face {
   font-family: "Satoshi-Variable";
   src: url("../fonts/Satoshi-Variable.woff2") format("woff2"), url("../fonts/Satoshi-Variable.woff") format("woff"), url("../fonts/Satoshi-Variable.ttf") format("truetype");
@@ -12,6 +19,7 @@
   font-weight: 300 900;
   font-display: swap;
   font-style: italic;
+
 }
 * {
   box-sizing: border-box;
@@ -20,6 +28,15 @@
 html {
   font-family: Satoshi-Variable;
   font-size: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .container,
@@ -83,6 +100,10 @@ main > h1 {
   font-size: 3.5rem;
   font-family: Satoshi-Variable;
 }
+section > h1 {
+  font-size: 3.5rem;
+  font-family: Satoshi-Variable;
+}
 main p {
   font-size: 1.25rem;
   width: min(100%, 45rem);
@@ -124,7 +145,7 @@ main p {
 }
 
 .main-header {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .nav-items {
@@ -145,12 +166,127 @@ main p {
 }
 .nav-item a {
   padding: 0.25rem 0.5rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   text-decoration: none;
   color: black;
+  letter-spacing: 1px;
 }
 .main-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.main-content {
+  margin-top: 6.25rem;
+  margin-bottom: 5rem;
+}
+
+.locations {
+  margin-top: 4rem;
+}
+
+
+h1 {
+  font-size: 2.5625rem;
+  line-height: 4.0625rem;
+}
+h1 + h2 {
+  margin-top: 0;
+}
+h2 {
+  font-size: 2.125rem;
+  line-height: 3.25rem;
+  margin-top: 3.4375rem;
+  margin-bottom: 1.3125rem;
+}
+
+
+p {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  margin-bottom: 2.125rem;
+}
+
+.cool-shiet {
+  height: 30rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  mask-image: repeating-linear-gradient(to right, black 0px, black 3px, transparent 3px, transparent 8px), repeating-linear-gradient(black 0px, black 3px, transparent 3px, transparent 8px), radial-gradient(100% 80% at 50% 100%, rgb(0, 0, 0) 50%, transparent 90%);
+  background-image: linear-gradient(to right, rgb(231, 229, 228) 1px, transparent 1px), linear-gradient(rgb(231, 229, 228) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0px 0px, 0px 0px;
+  mask-composite: intersect;
+}
+
+.main-footer {
+  margin-top: auto;
+  background-color: var(--color-primary-dark);
+  padding: 4rem 0rem 2rem 0rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 5rem;
+}
+.footer-content h2 {
+  color: white;
+  font-family: Satoshi-Variable;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+.footer-content > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.footer-links {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.big-fat-button {
+  background: hsl(194, 100%, 15%);
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  display: inline-block;
+  text-align: center;
+  font-family: Satoshi-Variable;
+} 
+
+.icon {
+      fill: white;
+      width: 3em;
+      height: 3em;
+      vertical-align: -0.125em;
+    }
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top:2rem;
 }
