@@ -1,0 +1,23 @@
+html {
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: -8px;
+    width: 100%;
+    min-width: 800px;
+    background-color: #eee;
+}
+
+
+.t1 {
+    background-color: aqua;
+}
+.t2 {
+    background-color:aquamarine;
+}
+.t3 {
+    background-color:azure;
+}
+.t4 {
+    background-color:bisque;
+}
