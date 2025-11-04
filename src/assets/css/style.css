@@ -13,6 +13,7 @@
   font-display: swap;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Satoshi-VariableItalic";
   src: url("../fonts/Satoshi-VariableItalic.woff2") format("woff2"), url("../fonts/Satoshi-VariableItalic.woff") format("woff"), url("../fonts/Satoshi-VariableItalic.ttf") format("truetype");
@@ -21,6 +22,7 @@
   font-style: italic;
 
 }
+
 * {
   box-sizing: border-box;
 }
@@ -90,6 +92,7 @@ body {
 
 .flex-row {
   display: flex;
+  flex-direction: row;
   gap: 1.875rem;
 }
 .flex-row > section {
@@ -107,11 +110,6 @@ section > h1 {
 main p {
   font-size: 1.25rem;
   width: min(100%, 45rem);
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
 }
 
 .flex-item {
@@ -285,8 +283,75 @@ p {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
+
 .social-icons {
   display: flex;
   gap: 1.5rem;
   margin-top:2rem;
+}
+
+.lagbruker label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.lagbruker input[type="text"],
+.lagbruker input[type="email"],
+.lagbruker input[type="password"],
+.lagbruker select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.lagbruker button[type="submit"] {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #426f7d;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+
+.utlan input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('./assets/img/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.utlan #searchTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.utlan #searchTable th, .utlan #searchTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+.utlan #searchTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.utlan #searchTable tr.header, #searchTable tr:hover {
+  background-color: #f1f1f1;
 }
