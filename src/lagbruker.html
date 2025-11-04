@@ -4,14 +4,13 @@
     <title>HVL - Læringslab</title>
 
 
-        <!-- Meta
-        ======================================= -->
+        <!-- Meta ======================================= -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Stylesheet 
-        ======================================= -->
+        <!-- Stylesheet ======================================= -->
         <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
     <header>
@@ -35,21 +34,31 @@
     <main class="container-2xl main-content">
       <article>
         <header>
-          <h1>Læringslab</h1>
-          <p>Et sted å henge, låne utstyr og lære nye ting!</p>
+          <h1>Lag bruker</h1>
+          <p>fyll inn info og lag bruker</p>
         </header>
-        <p>Læringslabbene ved Høgskulen på Vestlandet (HVL) er et sted for å utforske, samhandle og skape,
-        med fokus på teknologi. Det er i dag læringslabber på alle campuser.</p>
-        <p>Læringslabbene er førstelinjetjenesten ved HVL for hjelp til selvhjelp innen ny teknologi.
-        De kan brukes både av enkeltpersoner og grupper som ønsker å utvikle seg innen læring,
-        utvikle ny undervisning eller prøve ut nye digitale arbeidsmåter.</p>
-        <p>For studenter er det mulighet for å prøve ut teknologi, låne utstyr for bruk i skoleprosjekter,
-        samt egne utviklingsprosjekter.
-        For utviklingsprosjekter er HVL Skape en støttefunksjon som kan bidra med hjelp til innovasjon og entreprenørskap.
-        Læringslabbene gir også mulighet for forsking innen disse områdene.</p>
-      <h2>Hør hva studentene har å si!</h2>
-      <a href="spoer-en-student.html">Student omtale</a>
-    
+
+        <form action="./lagbruker.html" method="get" class="lagbruker">
+            <label for="fornavnField">Fornavn:</label>
+            <input id="fornavnField" type="text" placeholder="Bob Kåre" required><br>
+            <label for="etternavnField">Etternavn:</label>
+            <input id="etternavnField" type="text" placeholder="Ingebritsen" required><br>
+            <label for="fodselsdatoField">Fødselsdato:</label>
+            <input id="fodselsdatoField" type="text" placeholder="24.12.1337" required
+            title="format is dd.mm.yyyy"><br>
+            <label for="epostField">Epost:</label>
+            <input id="epostField" type="text" placeholder="bobkare.ingebritsen@mail.no" required><br>
+            <label for="pskField">Password:</label>
+            <input id="pskField" type="password" placeholder="Passord" required
+            title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long"><br>
+            <label for="pskField2">Confirm password:</label>
+            <input id="pskField2" type="password" placeholder="Repeat passord" required
+            title="Password fields must match"><br>
+            <label for="usernameField">Brukernavn (valgfritt):</label>
+            <input id="usernameField" type="text" placeholder="bobbycore69"><br>
+            <button type="submit">Lag ny bruker</button>
+        </form>
+
     </article>
     </main>
     <footer class="main-footer">
