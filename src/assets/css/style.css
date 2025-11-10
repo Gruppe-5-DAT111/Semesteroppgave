@@ -355,3 +355,18 @@ p {
 .utlan #searchTable tr.header, #searchTable tr:hover {
   background-color: #f1f1f1;
 }
+
+div.spiel {
+  position:relative;
+  height:calc(600px + 5em);
+  width:100%;
+  overflow:hidden;
+}
+
+div.spiel iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
